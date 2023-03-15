@@ -18,12 +18,18 @@
 // Blocks
 // ---------------------------------
 
-@import "blocks/btn";
-@import "blocks/modal";
-@import "blocks/custom-input";
-@import "blocks/custom-toggle";
-@import "blocks/custom-select";
+// @import "blocks/btn";
+// @import "blocks/modal";
+// @import "blocks/custom-input";
+// @import "blocks/custom-toggle";
+// @import "blocks/custom-select";
 
+
+@import "blocks/header/header.scss";
+@import "blocks/features/features.scss";
+@import "blocks/footer/accordion.scss";
+@import "blocks/footer/data-accordion.scss";
+@import "blocks/footer/footer.scss";
 // ---------------------------------
 
 // ❗❗❗ запрещено использовать изображения в css, касается как jpg \ png, так и svg
