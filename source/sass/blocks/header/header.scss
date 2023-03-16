@@ -1,28 +1,10 @@
-
-// .page-body__container {
-//     display: table;
-// 	height: 100%;
-// }
-
-.page-body__content {
-    // display: table-row;
-	// height: 100%;
-    // margin: 0;
-    // padding: 0;
-    flex: 1;
-}
-
-// .footer {
-// 	flex: 0 0 auto;
-// }
-
 .header {
     margin: 0 auto;
     display: flex;
     justify-content: center;
     width: 100%;
-    // position: fixed;
-    // z-index: 2;
+    position: fixed;
+    z-index: 2;
     background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
 }
 

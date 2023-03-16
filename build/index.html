@@ -11,99 +11,183 @@
 </head>
 
 <body>
-<!-- <div class="page-body__container"> -->
- <div class="page-body__content"> 
-  <header class="header">
-    <div class="header__wrapper">
-      <nav class="header__container">
-        <a class="header__logo-link" href="#">
-          <picture>
-            <source media="(max-width: 767px)" srcset="img/svg/logo-mobile.svg">
-            <img class="header__logo-img" src="img/svg/logo.svg" width="215" height="55" alt="Smart Device Logo" />
-          </picture>
-        </a>
-        <div class="header__contacts-container">
-          <a class="header__contacts-link" href="mailto:info@sd.ru">
-            <svg class="header__contacts-icon" width="20" height="20">
-              <use xlink:href="img/sprite.svg#email"></use>
-            </svg>
-            <span class="header__contacts-text">
-              info@sd.ru
-            </span>
+  <!-- <div class="page-body__container"> -->
+  <div class="page-body__content">
+    <header class="header">
+      <div class="header__wrapper">
+        <nav class="header__container">
+          <a class="header__logo-link" href="#">
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/svg/logo-mobile.svg">
+              <img class="header__logo-img" src="img/svg/logo.svg" width="215" height="55" alt="Smart Device Logo" />
+            </picture>
           </a>
+          <div class="header__contacts-container">
+            <a class="header__contacts-link" href="mailto:info@sd.ru">
+              <svg class="header__contacts-icon" width="20" height="20">
+                <use xlink:href="img/sprite.svg#email"></use>
+              </svg>
+              <span class="header__contacts-text">
+                info@sd.ru
+              </span>
+            </a>
 
-          <a class="header__contacts-link" href="tel:+74950005252">
-            <svg class="header__contacts-icon" width="20" height="20">
-              <use xlink:href="img/sprite.svg#phone"></use>
-            </svg>
-            <span class="header__contacts-text">
-              +7 (495) 000 52 52
-            </span>
+            <a class="header__contacts-link" href="tel:+74950005252">
+              <svg class="header__contacts-icon" width="20" height="20">
+                <use xlink:href="img/sprite.svg#phone"></use>
+              </svg>
+              <span class="header__contacts-text">
+                +7 (495) 000 52 52
+              </span>
+            </a>
+          </div>
+          <a class="header__order-call" href="#">
+            <span class="header__order-text">Заказать звонок</span>
           </a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero__container">
+          <div class="hero__img-container">
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/hero-mobile.jpg 1x, img/hero-mobile@2x.jpg 2x">
+              <source media="(max-width: 1023px)" srcset="img/hero-tablet.jpg 1x, img/hero-tablet@2x.jpg 2x">
+              <img class="hero__img" src="img/hero.jpg" width="1920" height="880" src="img/hero@2x.jpg"
+                alt="Печатная плита на синем фоне.">
+            </picture>
+          </div>
+          <div class="hero__text-wrapper">
+            <h2 class="hero__title">Печатные платы</h2>
+            <p class="hero__text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
+            <button class="hero__button" type="button">Получить бесплатную консультацию</button>
+          </div>
         </div>
-        <a class="header__order-call" href="#">
-          <span class="header__order-text">Заказать звонок</span>
-        </a>
-      </nav>
-    </div>
-  </header>
-  <!-- <main> 
-     <section class="features">
-      <div class="features__container">
-        <h2 class="features__title">
-          Smart Device предлагает следующие товары и услуги
-        </h2>
-        <h2 class="features__title---mobile">
-          Товары и услуги Smart&nbsp;Device
-        </h2>
-        <ul class="features__list">
-          <li class="features__item">
-            <a class="features__link" href="#">
-              <picture>
-                <source media="(max-width: 767px)" srcset="img/feature-mobile-1.jpg 1x, img/feature-mobile-1@2x.jpg 2x">
-                <source media="(max-width: 1023px)"
-                  srcset="img/feature-1-tablet.jpg 1x, img/feature-1-tablet@2x.jpg 2x">
-                <img class="features__img" width="350" height="650" src="img/feature-1.jpg"
-                  srcset="img/feature-1@2x.jpg" alt="Карточка товара производство мнтажных плит">
-              </picture>
-              <span class="features__text">
-                Производство печатных плат
-              </span>
-            </a>
+      </section>
+
+      <section class="features">
+        <div class="features__container">
+          <h2 class="features__title">
+            Smart Device предлагает следующие товары и услуги
+          </h2>
+          <h2 class="features__title---mobile">
+            Товары и услуги Smart&nbsp;Device
+          </h2>
+          <ul class="features__list">
+            <li class="features__item">
+              <a class="features__link" href="#">
+                <picture>
+                  <source media="(max-width: 767px)"
+                    srcset="img/feature-mobile-1.jpg 1x, img/feature-mobile-1@2x.jpg 2x">
+                  <source media="(max-width: 1023px)"
+                    srcset="img/feature-1-tablet.jpg 1x, img/feature-1-tablet@2x.jpg 2x">
+                  <img class="features__img" width="350" height="650" src="img/feature-1.jpg"
+                    srcset="img/feature-1@2x.jpg" alt="Карточка товара производство мнтажных плит">
+                </picture>
+                <span class="features__text">
+                  Производство печатных плат
+                </span>
+              </a>
+            </li>
+            <li class="features__item">
+              <a class="features__link" href="#">
+                <picture>
+                  <source media="(max-width: 767px)"
+                    srcset="img/feature-mobile-2.jpg 1x, img/feature-mobile-2@2x.jpg 2x">
+                  <source media="(max-width: 1023px)"
+                    srcset="img/feature-2-tablet.jpg 1x, img/feature-2-tablet@2x.jpg 2x">
+                  <img class="features__img" width="350" height="650" src="img/feature-2.jpg"
+                    srcset="img/feature-2@2x.jpg" alt="Карточка товара производство мнтажных плит">
+                </picture>
+                <span class="features__text">
+                  Монтаж печатных&nbsp;плат
+                </span>
+              </a>
+            </li>
+            <li class="features__item">
+              <a class="features__link" href="#">
+                <picture>
+                  <source media="(max-width: 767px)"
+                    srcset="img/feature-mobile-3.jpg 1x, img/feature-mobile-3@2x.jpg 2x">
+                  <source media="(max-width: 1023px)"
+                    srcset="img/feature-3-tablet.jpg 1x, img/feature-3-tablet@2x.jpg 2x">
+                  <img class="features__img" width="350" height="650" src="img/feature-3.jpg"
+                    srcset="img/feature-3@2x.jpg" alt="Карточка товара производство монтажных плит">
+                </picture>
+                <span class="features__text">
+                  Комплектующие для светотехники
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- <section class="advantages">
+        <ul class="advantage__list">
+          <li class="advantage__title">
+            <h3 class="advantage__item-title">Оперативные сроки</h3>
+            <p class="advantage__item-text">Усовершенствованная логистическая система позволяет нам просчитывать
+              стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
           </li>
-          <li class="features__item">
-            <a class="features__link" href="#">
-              <picture>
-                <source media="(max-width: 767px)" srcset="img/feature-mobile-2.jpg 1x, img/feature-mobile-2@2x.jpg 2x">
-                <source media="(max-width: 1023px)"
-                  srcset="img/feature-2-tablet.jpg 1x, img/feature-2-tablet@2x.jpg 2x">
-                <img class="features__img" width="350" height="650" src="img/feature-2.jpg"
-                  srcset="img/feature-2@2x.jpg" alt="Карточка товара производство мнтажных плит">
-              </picture>
-              <span class="features__text">
-                Монтаж печатных&nbsp;плат
-              </span>
-            </a>
+          <li class="advantage__title">
+            <h3 class="advantage__item-title">Крупные поставщики</h3>
+            <p class="advantage__item-text">Усовершенствованная логистическая система позволяет нам просчитывать
+              стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
           </li>
-          <li class="features__item">
-            <a class="features__link" href="#">
-              <picture>
-                <source media="(max-width: 767px)" srcset="img/feature-mobile-3.jpg 1x, img/feature-mobile-3@2x.jpg 2x">
-                <source media="(max-width: 1023px)"
-                  srcset="img/feature-3-tablet.jpg 1x, img/feature-3-tablet@2x.jpg 2x">
-                <img class="features__img" width="350" height="650" src="img/feature-3.jpg"
-                  srcset="img/feature-3@2x.jpg" alt="Карточка товара производство монтажных плит">
-              </picture>
-              <span class="features__text">
-                Комплектующие для светотехники
-              </span>
-            </a>
+          <li class="advantage__title">
+            <h3 class="advantage__item-title">Полная конфиденциальность</h3>
+            <p class="advantage__item-text">
+            <pre>По желанию клиента  мы обеспечиваем полную конфиденциальность.</pre>
+            </p>
+          </li>
+          <li class="advantage__title">
+            <h3 class="advantage__item-title">Персонализация стоимости</h3>
+            <p class="advantage__item-text">
+            <pre>Мы  подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</pre>
+            </p>
           </li>
         </ul>
-      </div>
-    </section> 
-  </main> -->
-</div>
+      </section> -->
+      <section class="about">
+        <div class="about__container">
+          <div class="about__wrapper">
+            <div class="about__img-container">
+              <img class="about__img" src="img/year.png" width="150" height="350" srcset="img/year@2x.png"
+                alt="С надписью 2022 года.">
+            </div>
+            <div class="about__text-wrapper">
+              <div class="about__title">О компании</div>
+              <p class="about__text">
+                Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с
+                1997
+                года. Выполняем срочные заказы и пилотные образцы до 10 дней.
+              </p>
+              <p class="about__text">
+                Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
+              </p>
+              <p class="about__text about__text--target-mobile about__text--mobile">
+                Печатные
+                платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД),
+                РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители
+                светотехники России.
+              </p>
+              <p class="about__text about__text--target about__text--hidden">
+                Smart Device — это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых
+                продолжают сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране и
+                20 городов присутствия.
+
+                Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри компании.
+                Использование инновационных технологий помогает экономить деньги и время наших клиентов.
+              </p>
+              <button class="about__button" type="button">Подробнее</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
   <footer class="footer">
     <section class="footer__block">
       <h2 class="visually-hidden">Контакты</h2>
@@ -217,7 +301,7 @@
     </section>
   </footer>
 
-<!-- </div> -->
+  <!-- </div> -->
   <!-- Модалки -->
   <!-- <div class="visually-hidden modal modal--preload" data-modal="feedback">
       <div class="modal__wrapper">

@@ -70,7 +70,18 @@
   }
 }
 
-// .accordion__button::after,
+.accordion__button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 15px;
+    height: 1px;
+    background-color: $color-alice-blue;
+    transform: rotate(-270deg);
+  }
+
+
 .accordion__button::before {
   content: "";
   position: absolute;
@@ -82,7 +93,7 @@
 }
 
 .accordion__element.is-active>.accordion__button::after {
-  transform: rotate(-270deg);
+  transform: rotate(-180deg);
   content: "";
   position: absolute;
   top: 50%;
@@ -93,7 +104,7 @@
   // transition: all 0.5s ease-out;
 }
 
-.accordion__element::before {
+.accordion__element::after {
    content: '';
    height: 1px;
    background-color: rgba(248, 253, 255, 0.7);
