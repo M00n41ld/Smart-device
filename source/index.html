@@ -2,9 +2,9 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Описание проекта">
   <title>ProjectName</title>
   <link rel="stylesheet" href="css/style.min.css">
@@ -12,31 +12,32 @@
 
 <body>
   <!-- <div class="page-body__container"> -->
-  <div class="page-body__content">
+  <div class="page-body">
+    <h1 class="visually-hidden">Сайт компании Smart Device</h1>
     <header class="header">
       <div class="header__wrapper">
         <nav class="header__container">
           <a class="header__logo-link" href="#">
             <picture>
               <source media="(max-width: 767px)" srcset="img/svg/logo-mobile.svg">
-              <img class="header__logo-img" src="img/svg/logo.svg" width="215" height="55" alt="Smart Device Logo" />
+              <img src="img/svg/logo.svg" width="215" height="55" alt="Smart Device Logo">
             </picture>
           </a>
           <div class="header__contacts-container">
             <a class="header__contacts-link" href="mailto:info@sd.ru">
-              <svg class="header__contacts-icon" width="20" height="20">
+              <svg width="20" height="20">
                 <use xlink:href="img/sprite.svg#email"></use>
               </svg>
-              <span class="header__contacts-text">
+              <span>
                 info@sd.ru
               </span>
             </a>
 
             <a class="header__contacts-link" href="tel:+74950005252">
-              <svg class="header__contacts-icon" width="20" height="20">
+              <svg width="20" height="20">
                 <use xlink:href="img/sprite.svg#phone"></use>
               </svg>
-              <span class="header__contacts-text">
+              <span>
                 +7 (495) 000 52 52
               </span>
             </a>
@@ -54,7 +55,7 @@
             <picture>
               <source media="(max-width: 767px)" srcset="img/hero-mobile.jpg 1x, img/hero-mobile@2x.jpg 2x">
               <source media="(max-width: 1023px)" srcset="img/hero-tablet.jpg 1x, img/hero-tablet@2x.jpg 2x">
-              <img class="hero__img" src="img/hero.jpg" width="1920" height="880" src="img/hero@2x.jpg"
+              <img class="hero__img" src="img/hero.jpg" width="1920" height="880" srcset="img/hero@2x.jpg"
                 alt="Печатная плита на синем фоне.">
             </picture>
           </div>
@@ -71,7 +72,7 @@
           <h2 class="features__title">
             Smart Device предлагает следующие товары и услуги
           </h2>
-          <h2 class="features__title---mobile">
+          <h2 class="features__title features__title---mobile">
             Товары и услуги Smart&nbsp;Device
           </h2>
           <ul class="features__list">
@@ -125,6 +126,7 @@
       </section>
 
       <!-- <section class="advantages">
+        <h2 class="visually-hidden">Преимущества Компании.</h2>
         <ul class="advantage__list">
           <li class="advantage__title">
             <h3 class="advantage__item-title">Оперативные сроки</h3>
@@ -158,7 +160,7 @@
                 alt="С надписью 2022 года.">
             </div>
             <div class="about__text-wrapper">
-              <div class="about__title">О компании</div>
+              <h2 class="about__title">О компании</h2>
               <p class="about__text">
                 Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с
                 1997
@@ -194,7 +196,7 @@
       <div class="footer__wrapper">
         <div class="footer__logos">
           <a class="footer__logo-link" href="#">
-            <img class="footer__logo-img" src="img/svg/logo.svg" width="215" height="55" alt="Smart Device Logo" />
+            <img class="footer__logo-img" src="img/svg/logo.svg" width="215" height="55" alt="Smart Device Logo">
           </a>
           <div class="footer__socials-container">
             <a class="footer__socials-link" href="#">
@@ -214,7 +216,6 @@
             </a>
           </div>
         </div>
-        <!-- <div></div> -->
         <div class="footer__accordion-wrapper">
           <div class="component-demo" data-tabs="element">
             <div class="accordion" data-accordion="parent" data-single="data-single" data-destroy="(max-width: 767px)">

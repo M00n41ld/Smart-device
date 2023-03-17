@@ -1,83 +1,87 @@
 .about {
-    background-color: $whisper;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    width: 100%;
+  background-color: $whisper;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .about__container {
-    max-width: 1320px;
-    flex: 1;
+  max-width: 1320px;
+  flex: 1;
 }
 
 .about__wrapper {
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    padding: 0 50px;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  padding: 0 50px;
+  gap: 100px;
+  padding-top: 120px;
+  padding-bottom: 80px;
 
-    @media (max-width: $vp-767) {
-        padding: 0 25px;
-        display: block;
-    }
+  @media (max-width: $vp-1023) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 0 25px;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    display: block;
+  }
 }
 
 .about__img-container {
-    width: 100%;
+  width: 100%;
 
-    @media (max-width: $vp-767) {
-        display: none;
-    }
+  @media (max-width: $vp-767) {
+    display: none;
+  }
 }
 
-// .about__img {
-//     object-fit: ;
-// }
-
 .about__text--hidden {
-    display: none;
+  display: none;
 }
 
 .about__text {
-    font-family: $mono;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-    color: $black-pearl;
+  font-family: $mono;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $black-pearl;
 }
 
 .about__text--mobile {
-
-    @media (max-width: $vp-767) {
-       color: red;
-       display: none;
-    }
-    }
-    
+  @media (max-width: $vp-767) {
+    display: none;
+  }
+}
 
 .about__title {
-    font-family: $roboto;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 51px;
-    color: $black-pearl;
-    margin-bottom: 15px;
-    margin-top: 0;
+  font-family: $roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: $black-pearl;
+  margin-bottom: 15px;
+  margin-top: 0;
 }
 
 .about__button {
-    font-family: $roboto;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    text-align: center;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: $deep-sky-blue;
-    padding: 14px 13px 8px 12px;
-    border: 1px solid $deep-sky-blue;
-    border-radius: 3px;
-    background-color: transparent;
-    width: 180px;
+  font-family: $roboto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $deep-sky-blue;
+  padding: 14px 13px 8px 12px;
+  border: 1px solid $deep-sky-blue;
+  border-radius: 3px;
+  background-color: transparent;
+  width: 180px;
+  cursor: pointer;
 }
