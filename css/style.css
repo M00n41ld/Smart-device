@@ -868,7 +868,7 @@ button,
   content: "";
   width: 60px;
   height: 60px;
-  background-image: url("../../../img/svg/arrow.svg");
+  background-image: url("../img/svg/arrow.svg");
   background-color: #00b2ff;
   color: #ffffff;
   background-position: center;
@@ -1547,7 +1547,7 @@ button,
 .form__checkbox input:checked::after {
   content: "";
   position: absolute;
-  background-image: url("../../../img/svg/check.svg");
+  background-image: url("../img/svg/check.svg");
   background-position: center;
   background-repeat: no-repeat;
   width: 15px;
@@ -1794,6 +1794,20 @@ button,
   visibility: hidden;
 }
 
+.modal.is-active {
+  visibility: visible;
+}
+
+.modal__overlay {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  overflow: hidden;
+}
+
 .modal__content {
   width: 500px;
   padding: 40px;
@@ -1808,7 +1822,7 @@ button,
 
 .modal__close-btn {
   background-color: transparent;
-  background-image: url("../../../img/svg/cross.svg");
+  background-image: url("../img/svg/cross.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 20px 20px;
@@ -2040,7 +2054,7 @@ button,
 .modal-form__checkbox input:checked::after {
   content: "";
   position: absolute;
-  background-image: url("../../../img/svg/check.svg");
+  background-image: url("../img/svg/check.svg");
   background-position: center;
   background-repeat: no-repeat;
   width: 15px;
@@ -2086,16 +2100,13 @@ button,
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  color: #f2f5f6;
 }
 
 .page-body__footer {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
-}
-
-.is-opened {
-  visibility: visible;
 }
 
 /* @mixin hover-focus {
