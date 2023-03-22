@@ -205,19 +205,3 @@
   border-radius: 2px;
   left: 0;
 }
-
-.modal-form__checkbox input {
-  appearance: none;
-  width: 15px;
-  height: 15px;
-  cursor: pointer;
-}
-
-.modal-form__checkbox span {
-  font-family: $mono;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-  color: $color-default-white;
-  margin-left: 10px;
-}

@@ -2064,24 +2064,6 @@ button,
   left: 0;
 }
 
-.modal-form__checkbox input {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  width: 15px;
-  height: 15px;
-  cursor: pointer;
-}
-
-.modal-form__checkbox span {
-  font-family: "PT Mono", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-  color: #ffffff;
-  margin-left: 10px;
-}
-
 .page-body__container {
   -webkit-box-flex: 1;
   -ms-flex: 1 0 auto;
