@@ -5,7 +5,6 @@
   width: 100%;
   background-color: $black-pearl;
   overflow: hidden;
-  // height: min-content;
 }
 
 .footer__block {
@@ -18,15 +17,17 @@
     display: flex;
     margin-right: -5px;
     justify-content: space-between;
-    margin-bottom: 35px;
+    margin-bottom: 27px;
+    padding-right: 25px;
   }
 
   @media (max-width: $vp-767) {
     flex-direction: column;
     align-items: center;
-    margin-bottom: 25px;
+    margin-bottom: 24px;
     padding-left: 25px;
-    padding-right: 25px;
+    padding-right: 37px;
+    padding-top: 35px;
   }
 }
 
@@ -43,33 +44,28 @@
 }
 
 .footer__wrapper {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 69px;
   padding: 0 50px;
-  padding-top: 50px;
+  padding-top: 45px;
+  padding-bottom: 40px;
 
   @media (max-width: $vp-1023) {
     padding: 0 25px;
     padding-top: 50px;
     display: block;
+    padding-left: 52px;
+    padding-bottom: 40px;
   }
 
-  // @media (max-width: $vp-767) {
-  //     // padding: 0;
-  //     // padding-top: 50px;
-  // }
+  @media (max-width: $vp-767) {
+    padding: 0;
+  }
 }
 
-// .footer__logo {
-//     flex: 1;
-// }
-
-// .footer__accordion-wrapper {
-//     flex: 2;
-// }
-
 .footer__logo-link {
-  margin-bottom: 25px;
+  margin-bottom: 35px;
   display: block;
   cursor: pointer;
 
@@ -78,13 +74,17 @@
   }
 
   @media (max-width: $vp-767) {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 }
 
 .footer__socials-link {
   display: flex;
   padding: 5px;
+
+  @media (max-width: $vp-1023) {
+    height: min-content;
+  }
 }
 
 .footer__socials-link:hover {
@@ -105,12 +105,15 @@
   gap: 15px;
   width: fit-content;
   margin-left: 10px;
+
+  @media (max-width: $vp-1023) {
+    padding-top: 5px;
+  }
 }
 
-// .footer__accordion-wrapper {
-
-//     @media (max-width: $vp-767) {
-//         padding-left: 25px;
-//         padding-right: 25px;
-//     }
-// }
+.footer__accordion-wrapper {
+  @media (max-width: $vp-767) {
+    margin-bottom: 60px;
+    border-bottom: 1px solid rgba(248, 253, 255, 0.7);
+  }
+}

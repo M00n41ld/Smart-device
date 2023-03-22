@@ -1,5 +1,5 @@
 .about {
-  background-color: $whisper;
+  background-color: $color-default-white;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -16,24 +16,31 @@
   grid-template-columns: 150px 1fr;
   padding: 0 50px;
   gap: 100px;
-  padding-top: 120px;
-  padding-bottom: 80px;
+  padding-top: 0;
+  padding-bottom: 101px;
 
   @media (max-width: $vp-1023) {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 19px;
+    padding-bottom: 79px;
+    gap: 29px;
+    padding-left: 48px;
   }
 
   @media (max-width: $vp-767) {
     padding: 0 25px;
-    padding-top: 50px;
+    padding-top: 11px;
     padding-bottom: 80px;
     display: block;
+    padding-left: 25px;
   }
 }
 
 .about__img-container {
   width: 100%;
+
+  @media (max-width: $vp-1023) {
+    margin-top: 7px;
+  }
 
   @media (max-width: $vp-767) {
     display: none;
@@ -58,7 +65,7 @@
   }
 }
 
-.about__title {
+.about__text-wrapper h2 {
   font-family: $roboto;
   font-style: normal;
   font-weight: 400;
@@ -67,6 +74,16 @@
   color: $black-pearl;
   margin-bottom: 15px;
   margin-top: 0;
+
+  @media (max-width: $vp-1023) {
+    margin-bottom: 14px;
+  }
+
+  @media (max-width: $vp-767) {
+    font-size: 28px;
+    line-height: 140.62%;
+    margin-bottom: 13px;
+  }
 }
 
 .about__button {
@@ -78,10 +95,57 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: $deep-sky-blue;
-  padding: 14px 13px 8px 12px;
+  padding: 15px 13px 12px 12px;
   border: 1px solid $deep-sky-blue;
   border-radius: 3px;
   background-color: transparent;
   width: 180px;
   cursor: pointer;
+  margin-top: 23px;
+
+  @media (max-width: $vp-1023) {
+    margin-top: -1px;
+  }
+
+  @media (max-width: $vp-767) {
+    margin-top: -5px;
+    width: 160px;
+    padding-top: 9px;
+    padding-bottom: 8px;
+  }
+}
+
+.about__button:hover {
+  color: $color-default-white;
+  background-color: $deep-sky-blue;
+}
+
+.about__button:focus {
+  color: $color-default-white;
+  background-color: $deep-sky-blue;
+}
+
+.about__button:active {
+  color: $color-default-white;
+  background-color: $deep-sky-blue;
+  opacity: 0.7;
+}
+
+.about__text p {
+  margin: 0;
+  margin-bottom: 18px;
+
+  @media (max-width: $vp-767) {
+    font-size: 14px;
+    line-height: 134.4%;
+    margin-bottom: 20px;
+  }
+}
+
+.about__text--sliced p {
+  margin-bottom: 0;
+}
+
+.about__text--nojs + .about__button {
+  display: none;
 }

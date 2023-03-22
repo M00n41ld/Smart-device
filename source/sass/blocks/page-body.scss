@@ -1,3 +1,15 @@
+.page-body__container {
+  flex: 1 0 auto;
+}
+
 .page-body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   flex: 1;
+  color: $color-alice-blue;
+}
+
+.page-body__footer {
+  flex: 0 0 auto;
 }

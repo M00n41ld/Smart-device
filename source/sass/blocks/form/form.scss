@@ -1,0 +1,319 @@
+.form {
+  background: linear-gradient(139.2deg, #04182780 0 33.6%, #00b3ff 33.6% 100%);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #00b3ff;
+
+  @media (max-width: $vp-1023) {
+    background: $deep-sky-blue;
+  }
+}
+
+.form__container {
+  max-width: 1320px;
+  flex: 1;
+}
+
+.form__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 50px;
+  gap: 41px;
+  padding-top: 164px;
+  padding-bottom: 248px;
+
+  @media (max-width: $vp-1023) {
+    display: block;
+    padding-top: 45px;
+    padding-bottom: 125px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 0 25px;
+    padding-bottom: 88px;
+    padding-top: 46px;
+  }
+}
+
+.form__image-wrapper {
+  padding-top: 81px;
+
+  @media (max-width: $vp-1023) {
+    display: none;
+  }
+}
+
+.form__image-wrapper img {
+  display: block;
+}
+
+.form__form-wrapper h3 {
+  font-family: $roboto;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: $color-default-white;
+  margin-top: 0;
+  margin-bottom: 14px;
+
+  @media (max-width: $vp-1023) {
+    margin-bottom: 8px;
+  }
+
+  @media (max-width: $vp-767) {
+    font-size: 30px;
+    line-height: 140.62%;
+    margin-bottom: 8px;
+  }
+}
+
+.form__form-wrapper p {
+  font-family: $mono;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-default-white;
+  margin-top: 0;
+  margin-bottom: 33px;
+
+  @media (max-width: $vp-1023) {
+    margin-bottom: 24px;
+  }
+
+  @media (max-width: $vp-767) {
+    font-size: 14px;
+    line-height: 134.4%;
+    margin-bottom: 34px;
+  }
+}
+
+.form__checkbox label {
+  font-family: $mono;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  position: relative;
+  display: block;
+  padding-left: 19px;
+  color: $color-default-white;
+  cursor: pointer;
+  text-align: start;
+  padding-top: 14px;
+
+  @media (max-width: $vp-1023) {
+    padding-top: 12px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding-left: 21px;
+  }
+}
+
+.form__checkbox input::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border: 1px solid $color-default-white;
+  border-radius: 2px;
+  left: 0;
+  top: 57%;
+  transform: translateY(-56%);
+
+  @media (max-width: $vp-767) {
+    top: 62%;
+  }
+}
+
+.form__checkbox input:checked::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/svg/check.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 15px;
+  border: 1px solid $color-default-white;
+  border-radius: 2px;
+  left: 0;
+}
+
+.form__input-container {
+  max-width: 580px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "username telephone"
+    "textarea textarea";
+  gap: 30px;
+  row-gap: 22px;
+  margin-bottom: 27px;
+
+  @media (max-width: $vp-1023) {
+    max-width: 100%;
+    row-gap: 20px;
+  }
+
+  @media (max-width: $vp-767) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "username"
+      "telephone"
+      "textarea";
+    margin-bottom: 22px;
+  }
+}
+
+.form__label--name {
+  grid-area: username;
+}
+
+.form__label--tel {
+  grid-area: telephone;
+}
+
+.form__label--text {
+  grid-area: textarea;
+}
+
+.form__input-container input:not([type="checkbox"]) {
+  border: none;
+  background: $form-gradient;
+  border-radius: 3px;
+  padding: 15px;
+  width: 100%;
+  margin-bottom: 0;
+  color: $color-default-white;
+  min-height: 50px;
+}
+
+.form__input-container textarea {
+  background: $form-gradient;
+  border-radius: 3px;
+  padding: 25px 15px;
+  width: 100%;
+  border: none;
+  color: $color-default-white;
+  min-height: 155px;
+  margin-bottom: 0;
+
+  @media (max-width: $vp-767) {
+    min-height: 180px;
+  }
+}
+
+.form__input-container textarea::placeholder {
+  font-family: $mono;
+  color: $color-default-white;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  cursor: pointer;
+
+  @media (max-width: $vp-1023) {
+    padding-top: 5px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding-top: 0;
+  }
+}
+
+.form__form-wrapper input::placeholder {
+  font-family: $mono;
+  color: $color-default-white;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  cursor: pointer;
+}
+
+.form__input-container textarea:hover {
+  background-color: $form-background;
+  opacity: 0.8;
+}
+
+.form__input-container textarea:focus {
+  background-color: $form-background;
+  opacity: 0.8;
+}
+
+.form__input-container textarea:active {
+  background-color: $form-background;
+  opacity: 0.6;
+}
+
+.form__input-container input:hover {
+  background-color: $form-background;
+  opacity: 0.8;
+}
+
+.form__input-container input:focus {
+  background-color: $form-background;
+  opacity: 0.8;
+}
+
+.form__input-container input:active {
+  background-color: $form-background;
+  opacity: 0.6;
+}
+
+.form__submit-container {
+  display: grid;
+  grid-template-columns: 265px auto;
+  gap: 50px;
+
+  @media (max-width: $vp-1023) {
+    gap: 85px;
+  }
+
+  @media (max-width: $vp-767) {
+    display: block;
+  }
+}
+
+.form__button {
+  background: $black-pearl;
+  border-radius: 3px;
+  padding: 13px 25px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-family: $roboto;
+  color: $color-default-white;
+  border: none;
+  cursor: pointer;
+
+  @media (max-width: $vp-1023) {
+    padding-top: 15px;
+    padding-bottom: 11px;
+    margin-top: 1px;
+  }
+
+  @media (max-width: $vp-767) {
+    width: 100%;
+    margin-bottom: 13px;
+  }
+}
+
+.form__button:hover {
+  opacity: 0.8;
+}
+
+.form__button:focus {
+  opacity: 0.8;
+}
+
+.form__button:active {
+  opacity: 0.6;
+}
+
+.form__checkbox input {
+  cursor: pointer;
+  appearance: none;
+}

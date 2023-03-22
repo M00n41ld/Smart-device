@@ -1,10 +1,9 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
-// import './modules/accordion';
 import {initAccordions} from './modules/accordion/init-accordion';
 
-
+const accordion = document.querySelectorAll('.accordion__element');
 const buttonMore = document.querySelector('.about__button');
 const lastParagraph = document.querySelector('.about__text--target');
 const mobileParagraph = document.querySelector('.about__text--target-mobile');
@@ -17,10 +16,6 @@ function handleTabletChange(e) {
     buttonMore.addEventListener('click', ShowMore);
   }
 }
-
-window.addEventListener('change', handleTabletChange);
-
-handleTabletChange(mediaQuery);
 
 function ShowMoreMobile() {
   mobileParagraph.classList.remove('about__text--mobile');
@@ -73,6 +68,16 @@ window.addEventListener('DOMContentLoaded', () => {
     form.init();
     initAccordions();
   });
+
+  window.addEventListener('change', handleTabletChange);
+
+  handleTabletChange(mediaQuery);
+
+  mobileParagraph.classList.add('about__text--mobile');
+  lastParagraph.classList.add('about__text--hidden');
+  lastParagraph.classList.remove('about__text--nojs');
+
+  accordion.forEach((element) => element.classList.remove('accordion__element--nojs'));
 });
 
 // ---------------------------------
