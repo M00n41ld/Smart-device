@@ -819,7 +819,7 @@ button,
   align-items: center;
 }
 
-.features__title {
+.features__container h3 {
   font-family: "Roboto-Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
@@ -831,7 +831,7 @@ button,
   margin-left: -424px;
 }
 
-.features__title---mobile {
+.features__container h3:nth-child(even) {
   display: none;
 }
 
@@ -893,6 +893,24 @@ button,
   left: 12%;
 }
 
+.accordion__content[data-accordion=element].is-active > [data-accordion=content] {
+  max-height: 100%;
+}
+
+.accordion__content[data-accordion=parent].no-transition [data-accordion=content] {
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
+.accordion__content[data-accordion=content] {
+  max-height: 0;
+  -webkit-transition: max-height 0.3s;
+  -o-transition: max-height 0.3s;
+  transition: max-height 0.3s;
+  overflow: hidden;
+}
+
 .accordion {
   margin: 0 auto 0 auto;
   display: -ms-grid;
@@ -900,11 +918,6 @@ button,
   gap: 12%;
   -ms-grid-columns: auto auto;
   grid-template-columns: auto auto;
-}
-
-.accordion .accordion {
-  width: 90%;
-  margin: 0 auto;
 }
 
 .accordion__element {
@@ -1067,24 +1080,6 @@ button,
 
 .accordion__element--nojs .accordion__content[data-accordion=content] {
   max-height: unset;
-}
-
-[data-accordion=element].is-active > [data-accordion=content] {
-  max-height: 100%;
-}
-
-[data-accordion=parent].no-transition [data-accordion=content] {
-  -webkit-transition: none;
-  -o-transition: none;
-  transition: none;
-}
-
-[data-accordion=content] {
-  max-height: 0;
-  -webkit-transition: max-height 0.3s;
-  -o-transition: max-height 0.3s;
-  transition: max-height 0.3s;
-  overflow: hidden;
 }
 
 .footer {
@@ -2132,6 +2127,12 @@ button,
   }
 */
 
+@media (max-width: 1440px) {
+  .features__container h3 {
+    margin-left: 0;
+  }
+}
+
 @media (max-width: 1439px) {
   .container {
     padding: 0 32px;
@@ -2181,7 +2182,7 @@ button,
     padding-bottom: 75px;
   }
 
-  .features__title {
+  .features__container h3 {
     margin-left: 0;
     margin-bottom: 38px;
   }
@@ -2439,11 +2440,11 @@ button,
     padding-bottom: 86px;
   }
 
-  .features__title {
+  .features__container h3 {
     display: none;
   }
 
-  .features__title---mobile {
+  .features__container h3:nth-child(even) {
     font-family: "Roboto-Condensed", "Arial", sans-serif;
     font-weight: 400;
     display: block;
@@ -2470,10 +2471,6 @@ button,
 
   .accordion {
     display: block;
-  }
-
-  .accordion__element:last-child {
-    margin-bottom: 0;
   }
 
   .accordion__element {
@@ -2503,6 +2500,10 @@ button,
     border: none;
     cursor: pointer;
     position: relative;
+  }
+
+  .accordion__element:last-child {
+    margin-bottom: 0;
   }
 
   .accordion__wrapper h3 {

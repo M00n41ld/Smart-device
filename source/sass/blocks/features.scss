@@ -28,7 +28,7 @@
   }
 }
 
-.features__title {
+.features__container h3 {
   font-family: $roboto;
   font-weight: 400;
   font-size: 36px;
@@ -38,6 +38,10 @@
   margin-top: 0;
   text-align: start;
   margin-left: -424px;
+
+  @media (max-width: $vp-1440) {
+    margin-left: 0;
+  }
 
   @media (max-width: $vp-1023) {
     margin-left: 0;
@@ -49,7 +53,7 @@
   }
 }
 
-.features__title---mobile {
+.features__container h3:nth-child(even)  {
   display: none;
 
   @media (max-width: $vp-767) {
