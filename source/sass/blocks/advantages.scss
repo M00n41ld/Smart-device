@@ -84,6 +84,16 @@
   }
 }
 
+.advantages__item-wrapper--mobile h3:nth-child(even) {
+  @media (max-width: $vp-1023) {
+    margin-bottom: 6px;
+  }
+
+  @media (max-width: $vp-767) {
+    margin-bottom: 15px;
+  }
+}
+
 .advantages__item:hover {
   background-color: $deep-sky-blue;
 }

@@ -46,10 +46,10 @@
 .footer__wrapper {
   display: grid;
   grid-template-columns: auto auto;
-  gap: 69px;
+  gap: 56px;
   padding: 0 50px;
   padding-top: 45px;
-  padding-bottom: 40px;
+  padding-bottom: 50px;
 
   @media (max-width: $vp-1023) {
     padding: 0 25px;
@@ -113,7 +113,7 @@
 
 .footer__accordion-wrapper {
   @media (max-width: $vp-767) {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
   }
 }

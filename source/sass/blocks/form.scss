@@ -96,7 +96,7 @@
   line-height: 16px;
   position: relative;
   display: block;
-  padding-left: 19px;
+  padding-left: 24px;
   color: $color-default-white;
   cursor: pointer;
   text-align: start;
@@ -107,7 +107,7 @@
   }
 
   @media (max-width: $vp-767) {
-    padding-left: 21px;
+    padding-left: 29px;
   }
 }
 
@@ -119,11 +119,11 @@
   border: 1px solid $color-default-white;
   border-radius: 2px;
   left: 0;
-  top: 57%;
-  transform: translateY(-56%);
+  top: 62%;
+  transform: translateY(-62%);
 
   @media (max-width: $vp-767) {
-    top: 62%;
+    top: 65%;
   }
 }
 
@@ -316,4 +316,5 @@
 .form__checkbox input {
   cursor: pointer;
   appearance: none;
+  margin-left: -7px;
 }

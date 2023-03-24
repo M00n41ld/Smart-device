@@ -31,10 +31,10 @@
   padding: 40px;
   background-color: $deep-sky-blue;
   position: relative;
-  margin-top: -48px;
-  padding-top: 36px;
-  padding-bottom: 45px;
-  margin-right: 18px;
+  margin-top: 63px;
+  padding-top: 35px;
+  padding-bottom: 44px;
+  margin-right: 17px;
   border-radius: 3px;
 }
 
@@ -175,6 +175,13 @@
   display: flex;
   position: relative;
   cursor: pointer;
+  padding-left: 24px;
+  font-family: $mono;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  opacity: 0.8;
 }
 
 .modal-form__checkbox {
@@ -204,4 +211,8 @@
   border: 1px solid $color-default-white;
   border-radius: 2px;
   left: 0;
+}
+
+.modal-form__checkbox input {
+  appearance: none;
 }
