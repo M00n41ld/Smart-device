@@ -9,48 +9,16 @@ const lastParagraph = document.querySelector('.about__text--target');
 const mobileParagraph = document.querySelector('.about__text--target-mobile');
 const mediaQuery = window.matchMedia('(max-width: 767px)');
 
-function handleTabletChange(e) {
-  if (e.matches) {
-    buttonMore.addEventListener('click', ShowMore);
-  } else {
-    buttonMore.addEventListener('click', ShowMore);
-  }
-}
-
-function removeParagraph() {
-  lastParagraph.classList.remove('about__text--hidden');
-  buttonMore.textContent = 'Свернуть';
-}
-
-function addParagraph() {
-  lastParagraph.classList.add('about__text--hidden');
-  buttonMore.textContent = 'Подробнее';
-}
-
-function ShowMoreMobile() {
-  mobileParagraph.classList.remove('about__text--mobile');
-  buttonMore.removeEventListener('click', ShowMoreMobile);
-  buttonMore.addEventListener('click', ShowLessMobile);
-  removeParagraph();
-}
-
-function ShowLessMobile() {
-  mobileParagraph.classList.add('about__text--mobile');
-  buttonMore.removeEventListener('click', ShowLessMobile);
-  buttonMore.addEventListener('click', ShowMoreMobile);
-  addParagraph();
-}
-
 function ShowMore() {
-  buttonMore.removeEventListener('click', ShowMore);
-  buttonMore.addEventListener('click', ShowLess);
-  removeParagraph();
-}
-
-function ShowLess() {
-  buttonMore.removeEventListener('click', ShowLess);
-  buttonMore.addEventListener('click', ShowMore);
-  addParagraph();
+  lastParagraph.classList.toggle('about__text--hidden');
+  if (mediaQuery.matches) {
+    mobileParagraph.classList.toggle('about__text--mobile')
+  }
+  if (lastParagraph.classList.contains('about__text--hidden')) {
+    buttonMore.textContent = "Подробнее";
+  } else {
+    buttonMore.textContent = "Свернуть";
+  }
 }
 
 // ---------------------------------
@@ -75,9 +43,9 @@ window.addEventListener('DOMContentLoaded', () => {
     initAccordions();
   });
 
-  window.addEventListener('change', handleTabletChange);
+  window.addEventListener('change', ShowMore);
 
-  handleTabletChange(mediaQuery);
+  buttonMore.addEventListener('click', ShowMore);
 
   mobileParagraph.classList.add('about__text--mobile');
   lastParagraph.classList.add('about__text--hidden');
