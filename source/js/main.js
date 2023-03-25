@@ -12,12 +12,12 @@ const mediaQuery = window.matchMedia('(max-width: 767px)');
 function ShowMore() {
   lastParagraph.classList.toggle('about__text--hidden');
   if (mediaQuery.matches) {
-    mobileParagraph.classList.toggle('about__text--mobile')
+    mobileParagraph.classList.toggle('about__text--mobile');
   }
   if (lastParagraph.classList.contains('about__text--hidden')) {
-    buttonMore.textContent = "Подробнее";
+    buttonMore.textContent = 'Подробнее';
   } else {
-    buttonMore.textContent = "Свернуть";
+    buttonMore.textContent = 'Свернуть';
   }
 }
 
