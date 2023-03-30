@@ -15,6 +15,7 @@
   <link rel="preload" href="fonts/Roboto-Condensed-Regular.woff2" type="font/woff2" as="font">
   <link rel="preload" href="fonts/Roboto-Condensed-Bold.woff2" type="font/woff2" as="font">
   <link rel="preload" href="fonts/pt-mono-regular.woff2" type="font/woff2" as="font">
+  <link rel="preload" as="image" href="./img/hero@2x.webp">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -130,7 +131,7 @@
               <div class="about__img-container">
                 <picture>
                   <source type="image/webp" srcset="img/year.webp 1x, img/year@2x.webp 2x">
-                  <img src="img/year.png" width="150" height="350" srcset="img/year@2x.png" alt="С надписью 2022 года.">
+                  <img src="img/year.png" loading="lazy" width="150" height="350" srcset="img/year@2x.png" alt="С надписью 2022 года.">
                 </picture>
               </div>
               <div class="about__text-wrapper">
@@ -185,6 +186,7 @@
             <ul class="features__list">
               <li class="features__item">
                 <a class="features__link" href="#">
+                  <div class="features__img-wrapper">
                   <picture>
                     <source type="image/webp" media="(max-width: 767px)"
                       srcset="img/feature-mobile-1.webp 1x, img/feature-mobile-1@2x.webp 2x">
@@ -195,16 +197,18 @@
                       srcset="img/feature-mobile-1.jpg 1x, img/feature-mobile-1@2x.jpg 2x">
                     <source media="(max-width: 1023px)"
                       srcset="img/feature-1-tablet.jpg 1x, img/feature-1-tablet@2x.jpg 2x">
-                    <img width="350" height="650" src="img/feature-1.jpg" srcset="img/feature-1@2x.jpg"
+                    <img loading="lazy" width="350" height="650" src="img/feature-1.jpg" srcset="img/feature-1@2x.jpg"
                       alt="Карточка товара производство монтажных плит.">
                   </picture>
-                  <span>
+                </div>
+                  <p>
                     Производство печатных плат
-                  </span>
+                  </p>
                 </a>
               </li>
               <li class="features__item">
                 <a class="features__link" href="#">
+                  <div class="features__img-wrapper">
                   <picture>
                     <source type="image/webp" media="(max-width: 767px)"
                       srcset="img/feature-mobile-2.webp 1x, img/feature-mobile-2@2x.webp 2x">
@@ -215,16 +219,18 @@
                       srcset="img/feature-mobile-2.jpg 1x, img/feature-mobile-2@2x.jpg 2x">
                     <source media="(max-width: 1023px)"
                       srcset="img/feature-2-tablet.jpg 1x, img/feature-2-tablet@2x.jpg 2x">
-                    <img width="350" height="650" src="img/feature-2.jpg" srcset="img/feature-2@2x.jpg"
+                    <img width="350" loading="lazy" height="650" src="img/feature-2.jpg" srcset="img/feature-2@2x.jpg"
                       alt="Карточка товара производство монтажных плит.">
                   </picture>
-                  <span>
+                  </div>
+                  <p>
                     Монтаж печатных&nbsp;плат
-                  </span>
+                  </p>
                 </a>
               </li>
               <li class="features__item">
                 <a class="features__link" href="#">
+                  <div class="features__img-wrapper">
                   <picture>
                     <source type="image/webp" media="(max-width: 767px)"
                       srcset="img/feature-mobile-3.webp 1x, img/feature-mobile-3@2x.webp 2x">
@@ -235,12 +241,13 @@
                       srcset="img/feature-mobile-3.jpg 1x, img/feature-mobile-3@2x.jpg 2x">
                     <source media="(max-width: 1023px)"
                       srcset="img/feature-3-tablet.jpg 1x, img/feature-3-tablet@2x.jpg 2x">
-                    <img width="350" height="650" src="img/feature-3.jpg" srcset="img/feature-3@2x.jpg"
+                    <img width="350" height="650" loading="lazy" src="img/feature-3.jpg" srcset="img/feature-3@2x.jpg"
                       alt="Карточка товара производство монтажных плит.">
                   </picture>
-                  <span>
+                  </div>
+                  <p>
                     Комплектующие для светотехники
-                  </span>
+                  </p>
                 </a>
               </li>
             </ul>
@@ -253,7 +260,7 @@
               <div class="form__image-wrapper">
                 <picture>
                   <source type="image/webp" srcset="img/airplane.webp 1x, img/airplane@2x.webp 2x">
-                  <img src="img/airplane.png" srcset="img/airplane@2x.png 2x" width="510" height="285"
+                  <img src="img/airplane.png" loading="lazy" srcset="img/airplane@2x.png 2x" width="510" height="285"
                     alt="Белый самолетик.">
                 </picture>
               </div>
@@ -281,7 +288,7 @@
                   <div class="form__submit-container">
                     <button class="form__button" type="submit">Задать вопрос</button>
                     <div class="form__checkbox">
-                      <label data-validate-type="checkbox" data-required>
+                      <label data-validate-type="checkbox" data-required data-message-base="Поставьте галочку">
                         <input type="checkbox" checked name="check">
                         <span>Я согласен на обработку персональных данных</span>
                       </label>
@@ -301,7 +308,7 @@
           <div class="footer__wrapper">
             <div class="footer__logos">
               <a class="footer__logo-link" href="index.html">
-                <img src="img/svg/logo.svg" width="215" height="55" alt="Smart Device Logo.">
+                <img loading="lazy" src="img/svg/logo.svg" width="215" height="55" alt="Smart Device Logo.">
               </a>
               <div class="footer__socials-container">
                 <a class="footer__socials-link" href="#">
@@ -378,7 +385,7 @@
                     <div class="accordion__content" data-accordion="content">
                       <div class="accordion__wrapper">
                         <h3>Наш офис</h3>
-                        <ul class="accordion__list">
+                        <ul class="accordion__list accordion__list--contacts">
                           <li class="accordion__item">
                             <address class="accordion__address">г. Мытищи, Олимпийский проспект, д.10</address>
                           </li>
@@ -422,7 +429,7 @@
                 <label class="modal-form__name" data-validate-type="text" data-required data-message-base="Заполните поле">
                   <input type="text" placeholder="Имя" name="name" id="name" required data-focus>
                 </label>
-                <label class="modal-form__tel"data-validate-type="phone" data-required data-message-base="Заполните поле">
+                <label class="modal-form__tel" data-validate-type="phone" data-required data-message-base="Заполните поле">
                   <input type="tel" placeholder="Телефон" name="phone" id="phone" required>
                 </label>
                 <label>
@@ -430,13 +437,13 @@
                 </label>
               </div>
               <div class="modal-form__submit-container">
-                <button class="modal-form__button" type="submit">Отправить</button>
                 <div class="modal-form__checkbox">
-                  <label data-validate-type="checkbox" data-required>
+                  <label data-validate-type="checkbox" data-required data-message-base="Поставьте галочку">
                     <input type="checkbox" checked name="check" id="check">
                     <span>Я&nbsp;согласен на&nbsp;обработку персональных&nbsp;данных</span>
                   </label>
                 </div>
+                <button class="modal-form__button" type="submit">Отправить</button>
               </div>
             </form>
           </div>

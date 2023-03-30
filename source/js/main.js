@@ -43,7 +43,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initAccordions();
   });
 
-  window.addEventListener('change', ShowMore);
+  // window.addEventListener('change', ShowMore);
 
   buttonMore.addEventListener('click', ShowMore);
 

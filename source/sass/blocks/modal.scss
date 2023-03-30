@@ -6,14 +6,22 @@
   height: 100%;
   top: 0;
   left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   visibility: hidden;
+  overflow-y: auto;
 }
 
 .modal.is-active {
   visibility: visible;
+}
+
+.modal__wrapper {
+  position: relative;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100%;
 }
 
 .modal__overlay {
@@ -31,7 +39,7 @@
   padding: 40px;
   background-color: $deep-sky-blue;
   position: relative;
-  margin-top: 63px;
+  margin-top: 61px;
   padding-top: 35px;
   padding-bottom: 44px;
   margin-right: 17px;
@@ -54,6 +62,7 @@
 
 .modal__content p {
   font-family: $mono;
+  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -158,6 +167,7 @@
   margin-top: 20px;
   cursor: pointer;
   user-select: none;
+  order: 1;
 }
 
 .modal-form__button:hover {
@@ -187,6 +197,8 @@
 
 .modal-form__checkbox {
   padding-left: 10px;
+  order: 2;
+  position: relative;
 }
 
 .modal-form__checkbox input::after {
@@ -197,7 +209,7 @@
   border: 1px solid $color-default-white;
   border-radius: 2px;
   left: 0;
-  top: 50%;
+  top: 7px;
   transform: translateY(-50%);
 }
 
@@ -212,20 +224,37 @@
   border: 1px solid $color-default-white;
   border-radius: 2px;
   left: 0;
+  top: 7px;
 }
 
 .modal-form__checkbox input {
   appearance: none;
 }
 
-
-.modal-form__checkbox input:focus::after {
-  outline: 1px solid black;
+.modal-form__checkbox input:hover::after {
   opacity: 0.6;
 }
 
-.modal-form__checkbox input:focus+span {
+.modal-form__checkbox input:hover + span {
   opacity: 0.6;
+}
+
+.modal-form__checkbox input:focus::after {
+  outline: 1px solid $black-pearl;
+  opacity: 0.6;
+}
+
+.modal-form__checkbox input:focus + span {
+  opacity: 0.6;
+}
+
+
+.modal-form__checkbox input:active::after {
+  opacity: 0.4;
+}
+
+.modal-form__checkbox input:active + span {
+  opacity: 0.4;
 }
 
 .modal-form__input-container {
@@ -234,11 +263,38 @@
 
 .modal-form__name .input-message {
   position: absolute;
-  top: 45px;
+  top: 50px;
+  font-family: $mono;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-default-white;
 }
 
 .modal-form__tel .input-message {
   position: absolute;
-  top: 114px;
+  top: 119px;
+  font-family: $mono;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-default-white;
 }
 
+.modal-form__submit-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.modal-form__checkbox span {
+  font-family: $mono;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.modal-form__checkbox .input-message {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+}

@@ -1,5 +1,5 @@
 .form {
-  background: linear-gradient(139.2deg, #04182780 0 33.6%, #00b3ff 33.6% 100%);
+  background: linear-gradient(139.2deg, #04182780 0 36.6%, #00b3ff 36.6% 100%);
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -18,10 +18,8 @@
 
 .form__wrapper {
   display: grid;
-  // grid-template-columns: 1fr 1fr;
-  grid-template-columns: auto 580px;
+  grid-template-columns: 1fr 580px;
   padding: 0 50px;
-  gap: 41px;
   padding-top: 164px;
   padding-bottom: 248px;
 
@@ -40,6 +38,7 @@
 
 .form__image-wrapper {
   padding-top: 81px;
+  width: fit-content;
 
   @media (max-width: $vp-1023) {
     display: none;
@@ -48,6 +47,17 @@
 
 .form__image-wrapper img {
   display: block;
+  width: 100%;
+  max-width: 510px;
+  margin-left: 0;
+}
+
+.form__form-wrapper {
+  margin-left: -10px;
+
+  @media (max-width: $vp-1023) {
+    margin-left: 0;
+  }
 }
 
 .form__form-wrapper h3 {
@@ -119,7 +129,7 @@
   height: 15px;
   border: 1px solid $color-default-white;
   border-radius: 2px;
-  left: 0;
+  left: 4px;
   top: 62%;
   transform: translateY(-62%);
 
@@ -138,7 +148,7 @@
   height: 15px;
   border: 1px solid $color-default-white;
   border-radius: 2px;
-  left: 0;
+  left: 4px;
 }
 
 .form__input-container {
@@ -290,6 +300,7 @@
   border: none;
   cursor: pointer;
   user-select: none;
+  order: 1;
 
   @media (max-width: $vp-1023) {
     padding-top: 15px;
@@ -301,6 +312,11 @@
     width: 100%;
     margin-bottom: 13px;
   }
+}
+
+.form__checkbox {
+  order: 2;
+  position: relative;
 }
 
 .form__button:hover {
@@ -321,45 +337,60 @@
   margin-left: -7px;
 }
 
-// .form__checkbox input:hover::after {
-//   opacity: 0.7;
-// }
+.form__checkbox input:hover::after {
+  opacity: 0.7;
+}
 
-// .form__checkbox input:hover+span {
-//   opacity: 0.7;
-// }
+.form__checkbox input:hover + span {
+  opacity: 0.7;
+}
 
-// .form__checkbox input:focus::after {
-//   outline: 1px solid black;
-//   opacity: 0.6;
-// }
+.form__checkbox input:focus::after {
+  outline: 1px solid $black-pearl;
+  opacity: 0.6;
+}
 
-// .form__checkbox input:focus+span {
-//   opacity: 0.6;
-// }
+.form__checkbox input:focus + span {
+  opacity: 0.6;
+}
 
-// .form__checkbox input:active::after {
-//   opacity: 0.4;
-// }
+.form__checkbox input:active::after {
+  opacity: 0.4;
+}
 
-// .form__checkbox input:active+span {
-//   opacity: 0.4;
-// }
+.form__checkbox input:active + span {
+  opacity: 0.4;
+}
 
-// .form__label {
-//   position: relative;
-// }
+.form__label {
+  position: relative;
+}
 
-// .form__input-tel span {
-//   position: absolute;
-//   top: 48px;
-//   width: 100%;
-//   left: 0;
-// }
+.form__input-tel span {
+  position: absolute;
+  top: 53px;
+  width: 100%;
+  left: 0;
+  font-family: $mono;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
 
-// .form__input-name span {
-//   position: absolute;
-//   top: 48px;
-//   width: 100%;
-//   left: 0;
-// }
+.form__input-name span {
+  position: absolute;
+  top: 53px;
+  width: 100%;
+  left: 0;
+  font-family: $mono;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.form__checkbox .input-message {
+  position: absolute;
+  bottom: -20px;
+  width: 100%;
+  left: 0;
+}
