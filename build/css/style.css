@@ -872,8 +872,6 @@ button,
   display: grid;
   -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
-  overflow-y: scroll;
-  scrollbar-width: none;
   max-width: 350px;
   height: 100%;
 }
@@ -2459,7 +2457,8 @@ button,
     grid-template-columns: 1fr;
     gap: 30px;
     width: 100%;
-    grid-auto-rows: 1fr;
+    -ms-grid-rows: 1fr;
+    grid-template-rows: 1fr;
   }
 
   .features__link {

@@ -81,7 +81,7 @@
     grid-template-columns: 1fr;
     gap: 30px;
     width: 100%;
-    grid-auto-rows: 1fr;
+    grid-template-rows: 1fr;
   }
 }
 
@@ -89,8 +89,6 @@
   position: relative;
   display: grid;
   grid-template-columns: 1fr;
-  overflow-y: scroll;
-  scrollbar-width: none;
   max-width: 350px;
   height: 100%;
 
