@@ -40,6 +40,7 @@
 }
 
 .header__logo-link img {
+  user-select: none;
   @media (max-width: $vp-767) {
     width: 35px;
     height: 35px;
@@ -105,6 +106,8 @@
   border-radius: 3px;
   height: fit-content;
   margin-right: 60px;
+  user-select: none;
+  max-width: 161px;
 
   @media (max-width: $vp-1023) {
     display: none;
@@ -128,6 +131,12 @@
   padding: 10px 9px;
   display: flex;
   align-items: center;
+  user-select: none;
+  min-width: 230px;
+
+  @media (max-width: $vp-1023) {
+    min-width: unset;
+  }
 }
 
 .header__contacts-link:hover {
@@ -153,7 +162,7 @@
 .header__contacts-container {
   display: grid;
   grid-template-columns: 225px 230px;
-  gap: 30px;
+  gap: 25px;
   margin-top: 35px;
 
   @media (max-width: $vp-1023) {

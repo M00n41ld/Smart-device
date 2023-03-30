@@ -12,8 +12,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
   <link rel="manifest" href="./img/favicon/site.webmanifest">
-  <link rel="preload" href="fonts/roboto-condensed-regular.woff2" type="font/woff2" as="font">
-  <link rel="preload" href="fonts/roboto-condensed-bold.woff2" type="font/woff2" as="font">
+  <link rel="preload" href="fonts/Roboto-Condensed-Regular.woff2" type="font/woff2" as="font">
+  <link rel="preload" href="fonts/Roboto-Condensed-Bold.woff2" type="font/woff2" as="font">
   <link rel="preload" href="fonts/pt-mono-regular.woff2" type="font/woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -263,12 +263,12 @@
                   <p>Мы&nbsp;проконсультируем Вас бесплатно</p>
                   <div class="form__input-container">
                     <div class="form__label form__label--name">
-                      <label data-validate-type="text" data-required data-message-base="Заполните поле">
+                      <label class="form__input-name" data-validate-type="text" data-required data-message-base="Заполните поле">
                         <input type="text" placeholder="Имя" name="name" required>
                       </label>
                     </div>
                     <div class="form__label form__label--tel">
-                      <label data-validate-type="phone" data-required data-message-base="Заполните поле">
+                      <label class="form__input-tel" data-validate-type="phone" data-required data-message-base="Заполните поле">
                         <input type="tel" placeholder="Телефон" name="phone" required>
                       </label>
                     </div>
@@ -419,10 +419,10 @@
               <h3>Закажите звонок</h3>
               <p>Оставьте контакты, мы&nbsp;проконсультируем вас&nbsp;бесплатно в&nbsp;удобное время</p>
               <div class="modal-form__input-container">
-                <label data-validate-type="text" data-required data-message-base="Заполните поле">
-                  <input type="text" placeholder="Имя" name="name" id="name" required>
+                <label class="modal-form__name" data-validate-type="text" data-required data-message-base="Заполните поле">
+                  <input type="text" placeholder="Имя" name="name" id="name" required data-focus>
                 </label>
-                <label data-validate-type="phone" data-required data-message-base="Заполните поле">
+                <label class="modal-form__tel"data-validate-type="phone" data-required data-message-base="Заполните поле">
                   <input type="tel" placeholder="Телефон" name="phone" id="phone" required>
                 </label>
                 <label>

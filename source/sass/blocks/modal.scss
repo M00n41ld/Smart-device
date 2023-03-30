@@ -157,6 +157,7 @@
   margin-bottom: 20px;
   margin-top: 20px;
   cursor: pointer;
+  user-select: none;
 }
 
 .modal-form__button:hover {
@@ -216,3 +217,28 @@
 .modal-form__checkbox input {
   appearance: none;
 }
+
+
+.modal-form__checkbox input:focus::after {
+  outline: 1px solid black;
+  opacity: 0.6;
+}
+
+.modal-form__checkbox input:focus+span {
+  opacity: 0.6;
+}
+
+.modal-form__input-container {
+  position: relative;
+}
+
+.modal-form__name .input-message {
+  position: absolute;
+  top: 45px;
+}
+
+.modal-form__tel .input-message {
+  position: absolute;
+  top: 114px;
+}
+

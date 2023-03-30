@@ -18,7 +18,8 @@
 
 .form__wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  // grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto 580px;
   padding: 0 50px;
   gap: 41px;
   padding-top: 164px;
@@ -288,6 +289,7 @@
   color: $color-default-white;
   border: none;
   cursor: pointer;
+  user-select: none;
 
   @media (max-width: $vp-1023) {
     padding-top: 15px;
@@ -318,3 +320,46 @@
   appearance: none;
   margin-left: -7px;
 }
+
+// .form__checkbox input:hover::after {
+//   opacity: 0.7;
+// }
+
+// .form__checkbox input:hover+span {
+//   opacity: 0.7;
+// }
+
+// .form__checkbox input:focus::after {
+//   outline: 1px solid black;
+//   opacity: 0.6;
+// }
+
+// .form__checkbox input:focus+span {
+//   opacity: 0.6;
+// }
+
+// .form__checkbox input:active::after {
+//   opacity: 0.4;
+// }
+
+// .form__checkbox input:active+span {
+//   opacity: 0.4;
+// }
+
+// .form__label {
+//   position: relative;
+// }
+
+// .form__input-tel span {
+//   position: absolute;
+//   top: 48px;
+//   width: 100%;
+//   left: 0;
+// }
+
+// .form__input-name span {
+//   position: absolute;
+//   top: 48px;
+//   width: 100%;
+//   left: 0;
+// }

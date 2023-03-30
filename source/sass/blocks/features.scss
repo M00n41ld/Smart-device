@@ -69,14 +69,17 @@
 }
 
 .features__list {
+  // max-width: 1220px;
+  // width: 100%;
   list-style: none;
   padding-left: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 85px;
   margin: 0;
+  gap: 85px;
 
   @media (max-width: $vp-1023) {
+    display: grid;
     grid-template-columns: 1fr;
     gap: 30px;
     width: 100%;
