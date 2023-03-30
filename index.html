@@ -15,6 +15,11 @@
   <link rel="preload" href="fonts/Roboto-Condensed-Regular.woff2" type="font/woff2" as="font">
   <link rel="preload" href="fonts/Roboto-Condensed-Bold.woff2" type="font/woff2" as="font">
   <link rel="preload" href="fonts/pt-mono-regular.woff2" type="font/woff2" as="font">
+  <!-- <link rel="preload" as="image" href="./img/hero-mobile@2x.jpg">
+  <link rel="preload" as="image" href="./img/hero-mobile@2x.webp">
+  <link rel="preload" as="image" href="./img/hero-mobile.jpg">
+  <link rel="preload" as="image" href="./img/hero-mobile.webp"> -->
+  <link rel="preload" as="image" href="./img/hero@2x.webp">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -130,7 +135,7 @@
               <div class="about__img-container">
                 <picture>
                   <source type="image/webp" srcset="img/year.webp 1x, img/year@2x.webp 2x">
-                  <img src="img/year.png" width="150" height="350" srcset="img/year@2x.png" alt="С надписью 2022 года.">
+                  <img src="img/year.png" loading="lazy" width="150" height="350" srcset="img/year@2x.png" alt="С надписью 2022 года.">
                 </picture>
               </div>
               <div class="about__text-wrapper">
@@ -196,13 +201,13 @@
                       srcset="img/feature-mobile-1.jpg 1x, img/feature-mobile-1@2x.jpg 2x">
                     <source media="(max-width: 1023px)"
                       srcset="img/feature-1-tablet.jpg 1x, img/feature-1-tablet@2x.jpg 2x">
-                    <img width="350" height="650" src="img/feature-1.jpg" srcset="img/feature-1@2x.jpg"
+                    <img loading="lazy" width="350" height="650" src="img/feature-1.jpg" srcset="img/feature-1@2x.jpg"
                       alt="Карточка товара производство монтажных плит.">
                   </picture>
                 </div>
-                  <span>
+                  <p>
                     Производство печатных плат
-                  </span>
+                  </p>
                 </a>
               </li>
               <li class="features__item">
@@ -218,13 +223,13 @@
                       srcset="img/feature-mobile-2.jpg 1x, img/feature-mobile-2@2x.jpg 2x">
                     <source media="(max-width: 1023px)"
                       srcset="img/feature-2-tablet.jpg 1x, img/feature-2-tablet@2x.jpg 2x">
-                    <img width="350" height="650" src="img/feature-2.jpg" srcset="img/feature-2@2x.jpg"
+                    <img width="350" loading="lazy" height="650" src="img/feature-2.jpg" srcset="img/feature-2@2x.jpg"
                       alt="Карточка товара производство монтажных плит.">
                   </picture>
                   </div>
-                  <span>
+                  <p>
                     Монтаж печатных&nbsp;плат
-                  </span>
+                  </p>
                 </a>
               </li>
               <li class="features__item">
@@ -240,13 +245,13 @@
                       srcset="img/feature-mobile-3.jpg 1x, img/feature-mobile-3@2x.jpg 2x">
                     <source media="(max-width: 1023px)"
                       srcset="img/feature-3-tablet.jpg 1x, img/feature-3-tablet@2x.jpg 2x">
-                    <img width="350" height="650" src="img/feature-3.jpg" srcset="img/feature-3@2x.jpg"
+                    <img width="350" height="650" loading="lazy" src="img/feature-3.jpg" srcset="img/feature-3@2x.jpg"
                       alt="Карточка товара производство монтажных плит.">
                   </picture>
                   </div>
-                  <span>
+                  <p>
                     Комплектующие для светотехники
-                  </span>
+                  </p>
                 </a>
               </li>
             </ul>
@@ -259,7 +264,7 @@
               <div class="form__image-wrapper">
                 <picture>
                   <source type="image/webp" srcset="img/airplane.webp 1x, img/airplane@2x.webp 2x">
-                  <img src="img/airplane.png" srcset="img/airplane@2x.png 2x" width="510" height="285"
+                  <img src="img/airplane.png" loading="lazy" srcset="img/airplane@2x.png 2x" width="510" height="285"
                     alt="Белый самолетик.">
                 </picture>
               </div>
@@ -307,7 +312,7 @@
           <div class="footer__wrapper">
             <div class="footer__logos">
               <a class="footer__logo-link" href="index.html">
-                <img src="img/svg/logo.svg" width="215" height="55" alt="Smart Device Logo.">
+                <img loading="lazy" src="img/svg/logo.svg" width="215" height="55" alt="Smart Device Logo.">
               </a>
               <div class="footer__socials-container">
                 <a class="footer__socials-link" href="#">
