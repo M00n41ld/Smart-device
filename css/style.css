@@ -2302,7 +2302,7 @@ button,
 
 .modal-form__checkbox .input-message {
   position: absolute;
-  bottom: 10px;
+  bottom: -17px;
   left: 0;
 }
 
