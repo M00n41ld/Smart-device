@@ -45,11 +45,15 @@
 
 .footer__wrapper {
   display: grid;
-  grid-template-columns: auto auto;
-  gap: 158px;
+  grid-template-columns: 215px auto;
+  gap: 13%;
   padding: 0 50px;
   padding-top: 45px;
   padding-bottom: 55px;
+
+  @media (max-width: $vp-1440) {
+    gap: 5%;
+  }
 
   @media (max-width: $vp-1023) {
     padding: 0 25px;

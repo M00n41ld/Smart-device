@@ -957,7 +957,7 @@ button,
   margin: 0 auto 0 auto;
   display: -ms-grid;
   display: grid;
-  gap: 42px;
+  gap: 5%;
   -ms-grid-columns: 460px auto;
   grid-template-columns: 460px auto;
 }
@@ -1151,9 +1151,9 @@ button,
 .footer__wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto auto;
-  grid-template-columns: auto auto;
-  gap: 158px;
+  -ms-grid-columns: 215px auto;
+  grid-template-columns: 215px auto;
+  gap: 13%;
   padding: 0 50px;
   padding-top: 45px;
   padding-bottom: 55px;
@@ -2355,6 +2355,14 @@ button,
 @media (max-width: 1440px) {
   .features__container h3 {
     margin-left: 0;
+  }
+
+  .accordion {
+    gap: 0;
+  }
+
+  .footer__wrapper {
+    gap: 5%;
   }
 }
 
