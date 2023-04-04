@@ -281,7 +281,8 @@
   }
 
   @media (max-width: $vp-767) {
-    display: block;
+    grid-template-columns: 1fr;
+    gap: 0;
   }
 }
 
