@@ -1,5 +1,5 @@
 .form {
-  background: linear-gradient(139.2deg, #04182780 0 36.6%, #00b3ff 36.6% 100%);
+  background: linear-gradient(139.2deg, #04182780 0 33.6%, #00b3ff 33.6% 100%);
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -22,6 +22,7 @@
   padding: 0 50px;
   padding-top: 164px;
   padding-bottom: 248px;
+  gap: 10px;
 
   @media (max-width: $vp-1023) {
     display: block;
@@ -68,9 +69,11 @@
   color: $color-default-white;
   margin-top: 0;
   margin-bottom: 14px;
+  margin-left: -4px;
 
   @media (max-width: $vp-1023) {
     margin-bottom: 8px;
+    margin-left: 0;
   }
 
   @media (max-width: $vp-767) {

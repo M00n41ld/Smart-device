@@ -1489,8 +1489,8 @@ button,
 }
 
 .form {
-  background: -o-linear-gradient(310.8deg, rgba(4, 24, 39, 0.5019607843) 0 36.6%, #00b3ff 36.6% 100%);
-  background: linear-gradient(139.2deg, rgba(4, 24, 39, 0.5019607843) 0 36.6%, #00b3ff 36.6% 100%);
+  background: -o-linear-gradient(310.8deg, rgba(4, 24, 39, 0.5019607843) 0 33.6%, #00b3ff 33.6% 100%);
+  background: linear-gradient(139.2deg, rgba(4, 24, 39, 0.5019607843) 0 33.6%, #00b3ff 33.6% 100%);
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1517,6 +1517,7 @@ button,
   padding: 0 50px;
   padding-top: 164px;
   padding-bottom: 248px;
+  gap: 10px;
 }
 
 .form__image-wrapper {
@@ -1545,6 +1546,7 @@ button,
   color: #ffffff;
   margin-top: 0;
   margin-bottom: 14px;
+  margin-left: -4px;
 }
 
 .form__form-wrapper p {
@@ -2634,6 +2636,7 @@ button,
 
   .form__form-wrapper h3 {
     margin-bottom: 8px;
+    margin-left: 0;
   }
 
   .form__form-wrapper p {
