@@ -2364,6 +2364,10 @@ button,
   .footer__wrapper {
     gap: 5%;
   }
+
+  .form__wrapper {
+    gap: 20px;
+  }
 }
 
 @media (max-width: 1439px) {

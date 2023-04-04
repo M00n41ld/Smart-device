@@ -24,6 +24,10 @@
   padding-bottom: 248px;
   gap: 10px;
 
+  @media (max-width: $vp-1440) {
+    gap: 20px;
+  }
+
   @media (max-width: $vp-1023) {
     display: block;
     padding-top: 45px;
